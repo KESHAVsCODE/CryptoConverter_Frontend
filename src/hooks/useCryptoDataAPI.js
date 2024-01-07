@@ -8,7 +8,7 @@ const useCryptoDataAPI = (endpoint = "crypto", initialParams = {}) => {
 
   const fetchCryptoData = async () => {
     const queryParamsString = new URLSearchParams(queryParams).toString();
-    const apiUrl = `http://localhost:2000/currency/${endpoint}?${queryParamsString}`;
+    const apiUrl = `https://crypto-currency-converter24.onrender.com/currency/${endpoint}?${queryParamsString}`;
     try {
       setLoading(true);
       setError("");
